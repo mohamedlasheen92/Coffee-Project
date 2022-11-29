@@ -1,0 +1,17 @@
+@mixin grid($value) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($value, 1fr));
+  gap: 2rem;
+}
+
+@mixin titleText($size) {
+  font-size: $size;
+  text-transform: capitalize;
+  color: $black;
+}
+
+@mixin graphText($size) {
+  font-size: $size;
+  line-height: 2;
+  color: $light;
+}
